@@ -1,4 +1,4 @@
-# Plotarea background image for flutter chart
+# Plot area background image for flutter chart
 
 A quick-start example to help you add the Syncfusion Flutter Charts package to a Flutter app. You will learn how to add a background image for a Cartesian chart. SfCartesianChart provides support for rendering the background image for the plot area. You can set the desired image as a background for the plot area using the plotAreaBackgroundImage property.
 
