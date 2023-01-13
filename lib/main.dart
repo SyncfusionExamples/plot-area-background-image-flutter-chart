@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
-import 'package:syncfusion_flutter_core/core.dart';
 
 void main() {
   // Register your license here
-  SyncfusionLicense.registerLicense(null);
   return runApp(BackgroundImage());
-  }
+}
 
 class BackgroundImage extends StatelessWidget {
   @override
@@ -36,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
           title: const Text('Chart With Background Image'),
         ),
         body: SfCartesianChart(
-            plotAreaBackgroundImage:const AssetImage('images/texture.jpg'),
+            plotAreaBackgroundImage: const AssetImage('images/texture.jpg'),
             primaryXAxis: CategoryAxis(),
             title: ChartTitle(text: 'Half yearly sales analysis'),
             legend: Legend(isVisible: true),
@@ -53,11 +51,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   name: 'Sales',
                   xValueMapper: (SalesData sales, _) => sales.year,
                   yValueMapper: (SalesData sales, _) => sales.sales,
-                  dataLabelSettings: DataLabelSettings(isVisible: true)
-              )
-            ]
-        )
-    );
+                  dataLabelSettings: DataLabelSettings(isVisible: true))
+            ]));
   }
 }
 
